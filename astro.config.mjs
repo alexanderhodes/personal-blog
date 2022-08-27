@@ -36,7 +36,7 @@ export default defineConfig({
     webmanifest({
       name: 'awesome blog',
       icon: './public/favicon.svg',
-      lang: 'en-US',
+      lang: 'de-de',
       short_name: 'awesome',
       description: "This is the description about your awesome blog",
       theme_color: '#ef4444',
