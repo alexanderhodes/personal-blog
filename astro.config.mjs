@@ -8,7 +8,7 @@ import webmanifest from 'astro-webmanifest';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sunny-arithmetic-1e866e.netlify.app",
+  site: "https://spiffy-chaja-5c7f8f.netlify.app",
   experimental: {
     integrations: true,
   },

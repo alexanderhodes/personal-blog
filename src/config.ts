@@ -4,4 +4,4 @@
 export const SITE_TITLE = "Awesome Blog";
 export const SITE_SUB_TITLE = "That's what I'm doing in my freetime.";
 export const SITE_DESCRIPTION = "Welcome to my website!";
-export const SITE_URL = "https://sunny-arithmetic-1e866e.netlify.app";
+export const SITE_URL = "https://spiffy-chaja-5c7f8f.netlify.app";
