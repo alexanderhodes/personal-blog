@@ -31,8 +31,10 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_SUB_TITLE } from "../config";
             </p>
         </main>
         <Footer />
-        <script>
-            window.metrical.trackEvent("page_not_found");
+        <script is:inline>
+            window.onload = function () {
+                window.metrical.trackEvent("page_not_found");
+            };
         </script>
     </body>
 </html>
