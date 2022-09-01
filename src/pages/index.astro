@@ -23,22 +23,16 @@ const tags = findTags(mappedPosts);
   <body class="bg-white dark:bg-black text-black dark:text-white">
     <Header title={SITE_TITLE} />
     <main>
-      <h2 class="font-bold text-xl mb-6 dark:text-white">
-        {SITE_SUB_TITLE}
-      </h2>
-
       <div class="mb-8">
         <p>
-          Here you can add some further information about yourself and what
-          you're doing. As well you can find more information <a
-            href="/about"
-            class="text-green-500 hover:text-green-700">about me</a
-          > on this page.
+          Es freut mich, dass du auf meiner Seite gelandet bist. Hier teile ich
+          verschiedenste Texte, die ich mit der Zeit schreibe. Falls euch die
+          Texte gefallen, könnt ihr mir gerne schreiben.
         </p>
       </div>
 
       <div>
-        <h3 class="font-bold text-green-500 text-lg">Posts</h3>
+        <h3 class="font-bold text-green-500 text-lg">Aktuelle Texte</h3>
 
         <TagsFilter selectedTag={currentTag} tags={tags} />
 
@@ -57,7 +51,7 @@ const tags = findTags(mappedPosts);
         </div>
 
         <a href="/blog" class="text-green-500 hover:text-green-700"
-          >See all posts</a
+          >Alle Texte anzeigen</a
         >
       </div>
     </main>
