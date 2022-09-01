@@ -1,6 +1,7 @@
 ---
 import Icon from "astro-icon";
 import { SITE_TITLE } from "../config";
+import Analytics from "./Analytics.astro";
 ---
 
 <header class="mb-4 flex flex-row justify-between">
@@ -15,6 +16,7 @@ import { SITE_TITLE } from "../config";
     <Icon name="tabler:sun" class="w-6 h-6 dark:text-white" />
   </button>
 </header>
+<Analytics />
 
 <script is:inline>
   if (
