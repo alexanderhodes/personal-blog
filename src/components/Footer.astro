@@ -1,6 +1,6 @@
 ---
-import { Icon } from "astro-icon";
 import Analytics from "./Analytics.astro";
+import FooterIcon from "./FooterIcon.astro";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -29,36 +29,10 @@ const currentYear = new Date().getFullYear();
         </div>
       </div>
       <div class="basis-1/4 justify-end flex flex-row">
-        <a
-          href="/rss.xml"
-          class="ml-4 hover:text-green-500 dark:text-white dark:hover:text-green-500"
-          aria-label="rss"
-          rel="noopener"
-        >
-          <Icon name="fa:feed" />
-        </a>
-        <a
-          href="#"
-          class="ml-4 hover:text-green-500 dark:text-white dark:hover:text-green-500"
-          aria-label="Email"
-          rel="noopener"
-        >
-          <Icon name="fa-solid:envelope" />
-        </a>
-        <a
-          href="#"
-          class="ml-4 hover:text-green-500 dark:text-white dark:hover:text-green-500"
-          aria-label="Github"
-          rel="noopener"
-        >
-          <Icon name="fa-brands:github" />
-        </a>
+        <FooterIcon ariaLabel="rss" href="/rss.xml" icon="fa:feed" />
+        <FooterIcon ariaLabel="email" href="#" icon="fa-solid:envelope" />
+        <FooterIcon ariaLabel="github" href="#" icon="fa-brands:github" />
       </div>
     </div>
   </div>
 </footer>
-<style>
-  [astro-icon] {
-    height: 24px;
-  }
-</style>
