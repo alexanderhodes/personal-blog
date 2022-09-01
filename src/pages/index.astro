@@ -17,50 +17,50 @@ const tags = findTags(mappedPosts);
 
 <!DOCTYPE html>
 <html lang="de-de">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h2 class="font-bold text-xl mb-6">
-				{SITE_SUB_TITLE}
-			</h2>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="bg-white dark:bg-black text-black dark:text-white">
+    <Header title={SITE_TITLE} />
+    <main>
+      <h2 class="font-bold text-xl mb-6 dark:text-white">
+        {SITE_SUB_TITLE}
+      </h2>
 
-			<div class="mb-8">
-				<p>
-					Here you can add some further information about yourself and
-					what you're doing. As well you can find more information <a
-						href="/about"
-						class="text-green-500 hover:text-green-700">about me</a
-					> on this page.
-				</p>
-			</div>
+      <div class="mb-8">
+        <p>
+          Here you can add some further information about yourself and what
+          you're doing. As well you can find more information <a
+            href="/about"
+            class="text-green-500 hover:text-green-700">about me</a
+          > on this page.
+        </p>
+      </div>
 
-			<div>
-				<h3 class="font-bold text-green-500 text-lg">Posts</h3>
+      <div>
+        <h3 class="font-bold text-green-500 text-lg">Posts</h3>
 
-				<TagsFilter selectedTag={currentTag} tags={tags} />
+        <TagsFilter selectedTag={currentTag} tags={tags} />
 
-				<div class="grid grid-cols-1 gap-4 mt-3 mb-3">
-					{
-						mappedPosts.map((p) => (
-							<PostTile
-								url={p.url}
-								title={p.frontmatter.title}
-								description={p.frontmatter.description}
-								date={p.frontmatter.pubDate}
-								is:raw
-							/>
-						))
-					}
-				</div>
+        <div class="grid grid-cols-1 gap-4 mt-3 mb-3">
+          {
+            mappedPosts.map((p) => (
+              <PostTile
+                url={p.url}
+                title={p.frontmatter.title}
+                description={p.frontmatter.description}
+                date={p.frontmatter.pubDate}
+                is:raw
+              />
+            ))
+          }
+        </div>
 
-				<a href="/blog" class="text-green-500 hover:text-green-700"
-					>See all posts</a
-				>
-			</div>
-		</main>
-		<Footer />
-	</body>
+        <a href="/blog" class="text-green-500 hover:text-green-700"
+          >See all posts</a
+        >
+      </div>
+    </main>
+    <Footer />
+  </body>
 </html>

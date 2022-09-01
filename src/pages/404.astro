@@ -7,29 +7,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 <!DOCTYPE html>
 <html lang="de-de">
-    <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    </head>
-    <body>
-        <Header title={SITE_TITLE} />
-        <main>
-            <h3 class="font-bold text-green-500 text-lg mb-3">
-                Page not found.
-            </h3>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="bg-white dark:bg-black text-black dark:text-white">
+    <Header title={SITE_TITLE} />
+    <main>
+      <h3 class="font-bold text-green-500 text-lg mb-3">Page not found.</h3>
 
-            <p class="mb-2">
-                Sorry, the content your searching for is not on the website
-                available. :(
-            </p>
+      <p class="mb-2">
+        Sorry, the content your searching for is not on the website available.
+        :(
+      </p>
 
-            <p class="mb-2">
-                If you're missing something special, just <a
-                    href="#"
-                    class="text-green-500 hover:text-green-700"
-                    >drop me a line</a
-                > and I'll check how I can help you.
-            </p>
-        </main>
-        <Footer />
-    </body>
+      <p class="mb-2">
+        If you're missing something special, just <a
+          href="#"
+          class="text-green-500 hover:text-green-700">drop me a line</a
+        > and I'll check how I can help you.
+      </p>
+    </main>
+    <Footer />
+  </body>
 </html>
