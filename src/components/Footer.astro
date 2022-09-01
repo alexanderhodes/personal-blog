@@ -35,4 +35,16 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
   </div>
+  <script>
+    window.onload = function () {
+      const element = document.getElementById("social-icon-rss");
+
+      if (element) {
+        element.addEventListener("click", () => {
+          console.log("rss clicked");
+          window.metrical.trackEvent("rss");
+        });
+      }
+    };
+  </script>
 </footer>

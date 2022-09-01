@@ -11,6 +11,7 @@ const { ariaLabel, href, icon } = Astro.props;
 ---
 
 <a
+  id={"social-icon-" + ariaLabel}
   href={href}
   class="ml-4 hover:text-green-500 dark:text-white dark:hover:text-green-500"
   aria-label={ariaLabel}
